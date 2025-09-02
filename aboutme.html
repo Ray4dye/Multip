@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;             
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.tentang-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.tentang-wrapper p {
+    text-indent: 40px;
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.tentang-wrapper img {
+    width: 260px;
+    height: 260px;
+    border-radius: 130px;
+    object-fit: cover;
+    margin-top: -30px;
+}
+
+header {
+    background: #0779e4;
+    color: #fff;
+    padding: 10px 0;
+    min-height: 70px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoimg {
+    width: 50px;
+    height: auto;
+}
+
+section {
+    padding: 60px 0;
+    border-bottom: #ccc 1px solid;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <h1 class="logo">
+            <img src="pngwing.com.png" alt="Logo" class="logoimg">
+            <a href="index.html"><h2>WebsiteX</h2></a>
+        </h1>
+        <nav class="navi">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="myproject.html">My Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="tentang">
+      <div class="container">
+        <h3>About Me</h3>
+        <div class="tentang-wrapper">
+          <p>
+            Halo! salam kenal, Saya Raynar Talib Seorang murid di kelas XI RPL 1 SMKN 6 Kota Tangerang Selatan, 
+            Saya berusia 16 tahun dan merupakan seorang Web Programmer. Fokus saya saat ini adalah meningkatkan 
+            dan mengembangkan kualitas skill saya agar dapat bersaing di dunia kerja, serta mempelajari hal-hal 
+            baru setiap harinya untuk meningkatkan wawasan dan ilmu pengetahuan saya.                
+          </p>
+          <img src="WhatsApp Image 2025-08-10 at 17.37.01.jpeg" alt="Foto Raynar Talib">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WebsiteX. All rights reserved.</p>
+  </footer>
+</body>
+</html>

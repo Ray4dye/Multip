@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+  <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;             
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.tentang-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.tentang-wrapper p {
+    text-indent: 40px;
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.tentang-wrapper img {
+    width: 260px;
+    height: 260px;
+    border-radius: 130px;
+    object-fit: cover;
+    margin-top: -30px;
+}
+
+header {
+    background: #0779e4;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 70px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoimg {
+    width: 50px;
+    height: auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 150px 20px;
+    background-image: url("pexels-padrinan-19670.jpg");
+    background-size: cover;      
+    background-position: center;   
+    min-height: 450px;              
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 16px;
+    color: black;
+}
+
+.cta-button {
+    background: #333;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: #555;        
+    transform: scale(1.05);   
+}
+
+section {
+    padding: 60px 0;
+    border-bottom: #ccc 1px solid;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.friend-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
+.friend-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.friend-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 60px;
+    margin-bottom: 15px;
+}
+
+section .container{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-info {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+main {
+    flex: 1;  /* dorong footer ke bawah */
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <h1 class="logo">
+            <img src="pngwing.com.png" alt="Logo" class="logoimg">
+            <a href="index.html"><h2>WebsiteX</h2></a>
+        </h1>
+
+        <nav class="navi">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="myproject.html">My Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="teman">
+        <div class="container">
+            <h3>My Project</h3>
+            <div class="friend-list">
+                <div class="friend-item">
+                    <img src="google_mail_gmail_logo_icon_159346.ico" alt="Friend Photo">
+                    <h4>Tutorial Membuat Akun Gmail Baru</h4>
+                    <p>Ini adalah video tutorial step by step membuat akun gmail yang baru.
+                      <a class="code" style="text-decoration: none;" href="https://youtu.be/9cxlvGDvu4s?si=4gTNPnHyWOzCuN_h" target="_blank"> Link Videonya.</a></p>
+                </div>
+                <div class="friend-item">
+                    <img src="Screenshot 2025-08-26 112821.png" alt="Friend Photo">
+                    <h4>Tetris PY</h4>
+                    <p>Game ini dibuat menggunakan Pygame dan dapat dimainkan dengan menjalankan kode.
+                      <a class="code" style="text-decoration: none;" href="https://drive.google.com/drive/folders/11qH_KvpaCGCzhpYDlKdozOOuWT358JVJ" target="_blank"> Kode ada disini.</a></p>
+                </div>
+                <div class="friend-item">
+                    <img src="Screenshot 2025-09-02 075917.png" alt="Friend Photo">
+                    <h4>Simple Calculator</h4>
+                    <p>Ini adalah kalkulkator simpel yang saya buat menggunakan JavaScript, CSS, dan HTML.
+                      <a class="code" style="text-decoration: none;" href="https://drive.google.com/drive/folders/1dIjIAqRvZDKImjgER5wjhZdncUcgblVv?hl=ID" target="_blank"> Kode ada disini.</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WebsiteX. All rights reserved.</p>
+  </footer>
+</body>
+</html>
